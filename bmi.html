@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-2" />  
+  <title>[ Tytul dokumentu ]</title>
+</head>
+<body>
+<h1>Oblicz BMI</h1>
+<hr>
+<script language="JavaScript">
+
+function dziel() {
+/* Odwołanie do formularza i jego elementów przez nazwę*/
+var skl1=parseFloat(document.kuba.a.value);
+var skl2=parseFloat(document.kuba.b.value);
+var wynik = skl1/(skl2*skl2);
+alert(wynik);
+}
+</script>
+
+<form name="kuba">
+waga w kg<input type="Text" name="a"><br>
+wzrost w metrach<input type="Text" name="b"><br>
+<input type="Button" value="Oblicz BMI" onclick="dziel()">
+</form>
+<hr>
+
+</body>
+</html>
