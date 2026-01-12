@@ -13,7 +13,9 @@ function dziel() {
 var skl1=parseFloat(document.kuba.a.value);
 var skl2=parseFloat(document.kuba.b.value);
 var wynik = skl1/(skl2*skl2);
-alert(wynik);
+if((wynik)<=18.5) {alert("niedowaga")}
+if((wynik)>=18.5 && (wynik)<=25) {alert("dobre bmi")}
+if((wynik)>=25){ alert("nadwaga")};
 }
 </script>
 
