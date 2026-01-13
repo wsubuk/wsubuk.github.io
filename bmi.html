@@ -6,10 +6,25 @@
 <body>
 <h1>Oblicz BMI</h1>
 <hr>
+
+<script type=text/javascript>
+function wzrost(x){
+if (x<1 || x>2.5)
+    alert ("Niepoprawna wartość wzrostu");
+}
+</script>
+
+<script type=text/javascript>
+function waga(x){
+if (x<0 || x>200)
+    alert ("Niepoprawna wartość wagi");
+}
+</script>
+
 <script language="JavaScript">
 
 function dziel() {
-/* Odwołanie do formularza i jego elementów przez nazwę*/
+/* OdwoĹanie do formularza i jego elementĂłw przez nazwÄ*/
 var skl1=parseFloat(document.kuba.a.value);
 var skl2=parseFloat(document.kuba.b.value);
 var wynik = skl1/(skl2*skl2);
@@ -20,14 +35,15 @@ if((wynik)>=25){ alert("nadwaga\n" +  wynik)};
 </script>
 
 <form name="kuba">
-waga w kg<input type="Text" name="a"><br>
-wzrost w metrach<input type="Text" name="b"><br>
+waga w kg<input type="Text" name="a" onchange="waga(this.value);"><br>
+wzrost w metrach<input type="Text" name="b" onchange="wzrost(this.value);"><br>
 <input type="Button" value="Oblicz BMI" onclick="dziel()">
 </form>
 <hr>
 
 </body>
 </html>
+
 
 
 
